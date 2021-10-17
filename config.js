@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = {
     app: {
-        px: ',',
+        px: '.',
         token: process.env.token,
         playing: '.help'
     },
