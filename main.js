@@ -1,5 +1,6 @@
 const { Player } = require('discord-player');
 const { Client, Intents } = require('discord.js');
+const keepAlive = require("./server")
 
 global.client = new Client({
     intents: [
@@ -18,4 +19,5 @@ global.player = new Player(client, client.config.opt.discordPlayer);
 require('./src/loader');
 require('./src/events');
 
+keepAlive();
 client.login(client.config.app.token);
