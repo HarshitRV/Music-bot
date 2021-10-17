@@ -2,7 +2,7 @@ const ms = require('ms');
 
 module.exports = {
     name: 'ping-music',
-    aliases: [],
+    aliases: ["pm"],
     utilisation: '{prefix}ping-music',
 
     execute(client, message) {
