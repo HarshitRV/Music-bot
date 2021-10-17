@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 
 module.exports = {
-    name: '$%^$@',
+    name: '$%>$@',
     aliases: ['nothingNew'],
     showHelp: false,
     utilisation: '{prefix}music',
