@@ -15,7 +15,7 @@ module.exports = {
 
         const embed = new MessageEmbed();
 
-        embed.setColor('RED');
+        embed.setColor('0x0949EE');
         embed.setThumbnail(track.thumbnail);
         embed.setAuthor(track.title, client.user.displayAvatarURL({ size: 1024, dynamic: true }));
 
@@ -27,7 +27,7 @@ module.exports = {
         embed.setDescription(`Volume **${queue.volume}**%\nDuration **${trackDuration}**\nLoop mode **${methods[queue.repeatMode]}**\nRequested by ${track.requestedBy}`);
 
         embed.setTimestamp();
-        embed.setFooter('Music comes first - Made with heart by Zerio ❤️', message.author.avatarURL({ dynamic: true }));
+        embed.setFooter(`Requested by ${message.author.username}`, message.author.avatarURL({ dynamic: true }));
 
         message.channel.send({ embeds: [embed] });
     },
