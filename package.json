@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "ffmpeg-static": "^4.4.0",
     "ms": "^3.0.0-canary.1",
-    "opusscript": "^0.0.8"
+    "opusscript": "^0.0.8",
+    "ytdl-core": "^4.10.0"
   },
   "engines": {
     "node": "16.11.1"
