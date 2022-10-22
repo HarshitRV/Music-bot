@@ -3,14 +3,14 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.route("/", (req, res) => {
+app.route("/").all((req, res) => {
     return res.status(200).send({
         status: 200,
         message: "music bot running 🎉"
     })
 });
 
-app.route("/health", (req, res)=>{
+app.route("/health").get((req, res) => {
     return res.status(200).send({
         message: "health check OK ✅"
     })
