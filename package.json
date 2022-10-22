@@ -5,6 +5,10 @@
     "version": "6.0.0",
     "repository": "https://github.com/ZerioDev/Music-bot.git",
     "description": "A complete code to download for a cool Discord music bot.",
+    "engines": {
+      "npm": "^8.11.0",
+      "node": "^16.18.0"
+    },
     "scripts": {
         "start": "node main.js",
         "dev": "env-cmd -f ./env/dev.env node main.js",
